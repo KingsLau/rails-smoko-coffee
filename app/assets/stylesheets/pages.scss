@@ -28,6 +28,14 @@
   }
 }
 
+.nav-item {
+  padding: 8px;
+  border-radius: 20px;
+  &:hover {
+    background-color: #167FFB;
+  }
+}
+
 .logo {
   position: absolute;
   top: 8px;
@@ -44,7 +52,6 @@
 }
 
 .card {
-  display: flex;
   margin: 24px auto;
   width: 480px;
   height: 360px;
