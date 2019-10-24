@@ -1,55 +1,45 @@
 <div class="page">
-  <ul>
-    <div class="cards">
-      <div class="card">
-        <li><%= link_to story_path do %>
-          our story
-          <%= image_tag "refreshments.jpg", alt: "story-picture" %>
+  <div class="container">
+
+      <div class="cards">
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to story_path do %>
+            <%#= image_tag "refreshments.jpg", alt: "story-picture" %>
+            <p>our story</p>
           <% end %>
-        </li>
+        </div>
+
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to team_path do %>
+            <p>our team</p>
+          <% end %>
+        </div>
+
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to menu_path do %>
+            <p>our menu</p>
+          <% end %>
+        </div>
+
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to reviews_path do %>
+            <p>our reviews</p>
+          <% end %>
+        </div>
+
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to responsibility_path do %>
+            <p>social responsibility</p>
+          <% end %>
+        </div>
+
+        <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(<%= image_path 'refreshments.jpg' %>);">
+          <%= link_to contact_path do %>
+            <p>contact us</p>
+          <% end %>
+        </div>
       </div>
 
-      <div class="card">
-        <li><%= link_to team_path do %>
-          our team
-          <%= image_tag "refreshments.jpg", alt: "team-picture" %>
-          <% end %>
-        </li>
-      </div>
-
-      <div class="card">
-        <li><%= link_to menu_path do %>
-          our menu
-          <%= image_tag "refreshments.jpg", alt: "menu-picture" %>
-          <% end %>
-        </li>
-      </div>
-
-      <div class="card">
-        <li><%= link_to reviews_path do %>
-          our reviews
-          <%= image_tag "refreshments.jpg", alt: "review-picture" %>
-          <% end %>
-        </li>
-      </div>
-
-      <div class="card">
-        <li><%= link_to responsibility_path do %>
-          social responsibility
-          <%= image_tag "refreshments.jpg", alt: "social-responsibility-picture" %>
-          <% end %>
-        </li>
-      </div>
-
-      <div class="card">
-        <li><%= link_to contact_path do %>
-          contact us
-          <%= image_tag "refreshments.jpg", alt: "contact-picture" %>
-          <% end %>
-        </li>
-      </div>
     </div>
-  </ul>
-
   </div>
 </div>
