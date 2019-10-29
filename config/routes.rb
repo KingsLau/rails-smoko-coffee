@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get 'team', to: 'pages#team'
   get 'menu', to: 'pages#menu'
   get 'responsibility', to: 'pages#responsibility'
-  resources :reviews, only: [:index]
+  # resources :reviews, only: [:index, :new, :create]
+  # resources :reviews, only: [:index]
+  resources :reviews
+  # get 'review', to: 'reviews#index'
 end

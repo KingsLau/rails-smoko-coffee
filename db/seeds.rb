@@ -6,12 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "destroying all reviews"
+puts 'destroying all reviews'
 
 Review.destroy_all
 
-puts "creating new reviews"
+puts 'creating new reviews'
 
-Review.create(name: "User 1", comment: "Review 1")
-Review.create(name: "User 2", comment: "Review 2")
-Review.create(name: "User 3", comment: "Review 3")
+Review.create(name: 'Andrew', email: 'andrew@gmail.com', comment: "Best coffee I've ever had", stars: 5)
+Review.create(name: 'Bill', email: 'bill@gmail.com', comment: 'Great coffee, fresh food, good vibes', stars: 4)
+Review.create(name: 'Cassie', email: 'Cassie@gmail.com', comment: 'Awesome', stars: 3)
+
+puts 'created new reviews'
