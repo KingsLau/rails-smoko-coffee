@@ -27,6 +27,7 @@
         color: white;
         font-size: 40px;
         &:hover {
+          color: #167FFB;
           text-decoration: none;
         }
       }
@@ -53,9 +54,4 @@
   &:hover {
     background-color: #167FFB;
   }
-}
-
-.logo {
-  width: auto;
-  height: 76px;
 }
