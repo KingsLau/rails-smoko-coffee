@@ -19,14 +19,14 @@
       <div class="nav-bar-top">
         <%= image_tag "logo.jpg", alt: "logo", class: "logo" %>
         <h1 class="title"> <%= link_to "smoko", root_path %> </h1>
-        <div class="icons col-12 col-xl-2">
+        <div class="icons">
           <%= link_to "https://www.facebook.com/Smoko-Coffee-788828204568094/", target: "_blank" do %>
             <i class="fab fa-facebook" data-toggle="tooltip" data-placement="auto" title="Check out our Facebook!"></i>
           <% end %>
           <%= mail_to "smoko@gmail.com" do %>
             <i class="far fa-envelope" data-toggle="tooltip" data-placement="auto" title="Send us an e-mail!"></i>
           <% end %>
-    </div>
+        </div>
       </div>
       <ul class="navbar nav-pills">
         <li class="nav-item"><%= link_to "our story", story_path %></li>
