@@ -1,9 +1,9 @@
 <div class="container form">
   <%= simple_form_for(@review) do |f| %>
-    <%= f.input :name, label: "Name" %>
-    <%= f.input :name, label: "Email" %>
-    <%= f.input :name, label: "Review" %>
-    <%= f.input :name, label: "Stars" %>
+    <%= f.input :name, label: "Name", required: true %>
+    <%= f.input :email, label: "Email", required: true %>
+    <%= f.input :comment, label: "Comment", required: true %>
+    <%= f.input :stars, label: "Stars", required: true %>
     <%= f.button :submit, label: "Create Review", class: "btn btn-primary" %>
   <% end %>
 </div>
