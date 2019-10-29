@@ -2,7 +2,14 @@
   width: auto;
   height: auto;
   margin: 0 auto;
-  h5, p {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 24px;
+    font-style: italic;
+  }
+  h1, p {
     text-shadow: 2px 2px black;
   }
 }
@@ -12,4 +19,10 @@
     height: 100%;
     width: 100%;
   }
+}
+
+.carousel-caption {
+  text-align: center;
+  top: 50%;
+  transform: translateY(-40%);
 }
