@@ -2,7 +2,9 @@
   <div class="container">
     <h1>what people say about us</h1>
 
-    <%= link_to "Add a review", new_review_path %>
+    <p>Our average rating is <%= @average.to_f %>!</p>
+
+    <p>If you like, please <%= link_to "leave us a review", new_review_path %></p>
 
     <% @reviews.each do |review| %>
       <div class="review">
