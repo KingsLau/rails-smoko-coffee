@@ -7,6 +7,7 @@
     <% @reviews.each do |review| %>
       <div class="review">
         <h5>Name: <%= "#{review.name}" %></h5>
+        <p>Email: <%= "#{review.email}" %></p>
         <p>Review: <%= "#{review.comment}" %></p>
         <p>Stars: <%= "#{review.stars}" %></p>
         <br>
