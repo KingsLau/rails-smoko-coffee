@@ -1,6 +1,22 @@
-#carousel-one {
+#carousel-story {
   width: auto;
-  height: auto;
+  height: 80vh;
+  margin: 0 auto;
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 24px;
+    font-style: italic;
+  }
+  h1, p {
+    text-shadow: 2px 2px black;
+  }
+}
+
+#carousel-team {
+  width: auto;
+  height: 80vh;
   margin: 0 auto;
   h1 {
     font-size: 32px;
