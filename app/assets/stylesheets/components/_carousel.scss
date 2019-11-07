@@ -37,8 +37,14 @@
   }
 }
 
-.carousel-caption {
-  text-align: center;
-  top: 50%;
-  transform: translateY(-40%);
+.story {
+  .carousel-caption {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+}
+
+.team {
+
 }
