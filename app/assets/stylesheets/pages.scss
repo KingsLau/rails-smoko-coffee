@@ -25,12 +25,25 @@ body, html {
   padding-top: 16px;
 }
 
-.story-image {
-  margin: 0;
-  justify-content: center;
-}
+// .story-image {
+//   margin: 0;
+//   justify-content: center;
+// }
 
 .menu {
   height: 70vh;
   width: 100%;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  .team-image {
+    width: 100%;
+  }
+  .team-description {
+    width: 50%;
+    // justify-content: center;
+    // align-items: center;
+  }
 }
