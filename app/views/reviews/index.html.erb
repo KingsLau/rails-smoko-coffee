@@ -11,9 +11,14 @@
         <h5>Name: <%= "#{review.name}" %></h5>
         <p>Email: <%= "#{review.email}" %></p>
         <p>Comment: <%= "#{review.comment}" %></p>
-        <p>Stars: <%= "#{review.stars}" %></p>
-        <br>
+          <% "#{review.stars}".to_i.times do %>
+            <span class="fa fa-star checked"></span>
+          <% end %>
       </div>
+      <br>
     <% end %>
   </div>
 </div>
+
+          <!-- <p>Stars: <%#= "#{review.stars}" %></p>
+          <span class="fa fa-star checked"></span> -->
