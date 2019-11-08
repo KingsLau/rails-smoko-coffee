@@ -63,3 +63,20 @@ body, html {
   position: sticky;
   top: 159px;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.average-stars {
+  font-size: 32px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

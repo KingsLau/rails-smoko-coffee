@@ -1,27 +1,35 @@
 <div class="page">
   <div class="container">
-    <h1>what people say about us</h1>
-
-    <p>Our average rating</p>
-    <p>
-      <% @average.times do %>
-        <span class="fa fa-star checked"></span>
-      <% end %>
-    </p>
-
-    <p>If you like, please <%= link_to "leave us a review", new_review_path %></p>
-
-    <% @reviews.each do |review| %>
-      <div class="review">
-        <h5>Name: <%= "#{review.name}" %></h5>
-        <p>Email: <%= "#{review.email}" %></p>
-        <p>Comment: <%= "#{review.comment}" %></p>
-          <% "#{review.stars}".to_i.times do %>
-            <span class="fa fa-star checked"></span>
+    <div class="header">
+      <div class="average">
+        <h4>Our average rating</h4>
+        <p>
+          <% @average.times do %>
+            <span class="fa fa-star checked average-stars"></span>
           <% end %>
+        </p>
       </div>
-      <br>
-    <% end %>
+      <div class="title">
+        <h1>what people say about us</h1>
+      </div>
+      <div class="new-review">
+        <%= link_to "Leave us a review!", new_review_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <% @reviews.each do |review| %>
+        <div class="review">
+          <h5>Name: <%= "#{review.name}" %></h5>
+          <p>Email: <%= "#{review.email}" %></p>
+          <p>Comment: <%= "#{review.comment}" %></p>
+            <% "#{review.stars}".to_i.times do %>
+              <span class="fa fa-star checked"></span>
+            <% end %>
+        </div>
+        <br>
+      <% end %>
+    </div>
   </div>
 </div>
 
