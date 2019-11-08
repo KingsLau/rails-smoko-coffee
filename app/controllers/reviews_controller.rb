@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
   def index
     @reviews = Review.all
-    @average = (@reviews.sum(:stars) / @reviews.count).to_f
+    @average = (@reviews.sum(:stars) / @reviews.count).to_i
   end
 
   def new

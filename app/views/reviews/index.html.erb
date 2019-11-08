@@ -2,7 +2,12 @@
   <div class="container">
     <h1>what people say about us</h1>
 
-    <p>Our average rating is <%= @average %>!</p>
+    <p>Our average rating</p>
+    <p>
+      <% @average.times do %>
+        <span class="fa fa-star checked"></span>
+      <% end %>
+    </p>
 
     <p>If you like, please <%= link_to "leave us a review", new_review_path %></p>
 
