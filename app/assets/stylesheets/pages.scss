@@ -25,25 +25,41 @@ body, html {
   padding-top: 16px;
 }
 
-// .story-image {
-//   margin: 0;
-//   justify-content: center;
-// }
-
 .menu {
   height: 70vh;
   width: 100%;
 }
 
-.team-member {
+.team {
   display: flex;
-  align-items: center;
-  .team-image {
+  // align-items: center;
+  .team-images {
+    height: 1502px;
     width: 100%;
+    .person {
+      height: 700px;
+    }
   }
   .team-description {
     width: 50%;
-    // justify-content: center;
-    // align-items: center;
+    vertical-align: middle;
   }
+}
+
+// .team-image {
+//   height: 2000px;
+// }
+
+.team-member-one {
+  padding: 200px 0 300px 0;
+}
+
+.team-member-two {
+  padding: 228px 0 100px 0;
+}
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 159px;
 }
