@@ -16,8 +16,8 @@ body, html {
 .page {
   height: auto;
   margin: 0;
-  padding: 0;
-  padding-top: 159px;
+  // padding: 0;
+  padding-top: 140.47px;
   text-align: center;
 }
 
@@ -95,3 +95,18 @@ body, html {
   height: auto;
   width: 75%;
 }
+
+// .hidden {
+//   visibility: hidden;
+// }
+
+// .fade {
+//    opacity: 1;
+//    transition: opacity .25s ease-in-out;
+//    -moz-transition: opacity .25s ease-in-out;
+//    -webkit-transition: opacity .25s ease-in-out;
+//    }
+
+//    .fade:hover {
+//       opacity: 0.5;
+//       }
