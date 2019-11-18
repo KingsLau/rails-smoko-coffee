@@ -3,14 +3,16 @@
   z-index: 100;
   position: fixed;
   top: 0;
+  height: 16vh;
   width: 100%;
   .nav-bar-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 2%;
-    .logo {
+    img {
       width: auto;
+      // height: 1%;
       height: 76px;
     }
     .title {
@@ -40,6 +42,8 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0;
   padding-top: 0;
