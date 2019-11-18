@@ -1,18 +1,30 @@
 let initialSrc = "/assets/founder-13e9c0be46a53c4859ae85334a2815bf7846ea7bfa6a3da4a2a86a2510e33977.jpg";
 let scrollSrc = "/assets/menu-e68d9ac20913e080e8af1ec562b3bf1628ab24a0c55e2d51da68cc7e170712ce.jpg";
-// let element = document.getElementById("abc");
+let element = document.getElementById("abc");
 
 $(window ).scroll(function() {
   // If user didn't scroll 500px set default z-index
   if ($(this).scrollTop()>500) {
     $(".person").attr("src", scrollSrc);
-    // element.classList.add("hidden");
-  } else {
-      // If user scrolled 1200px change logo's z-index to 9999
+    element.classList.add("fadeImage");
+    // element.classList.remove("fadeImage");
+    // element.classList.remove("fadeImage");
+  } else if ($(this).scrollTop()<50) {
       $(".person").attr("src", initialSrc);
-      // element.classList.remove("hidden");
+    // element.classList.remove("fadeImage");
+    element.classList.add("fadeImage");
+    // element.classList.remove("fadeImage");
+  } else {
+      // If user scrolled 500px change logo's z-index to 9999
+      // $(".person").attr("src", initialSrc);
+      element.classList.remove("fadeImage");
+      // element.classList.add("fadeImage");
   }
 });
+
+// when above 500, set img src and add fadeImage
+// when below 500, set img src and add fadeImage
+// when
 
 // $(window).scroll(function() {
 //    let value = $(this).scrollTop();
