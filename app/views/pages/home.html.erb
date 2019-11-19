@@ -2,37 +2,43 @@
   <!-- <div class="container"> -->
 
       <div class="cards">
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'hot-coffee.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "hot-coffee.jpg", alt: "hot coffee image" %>
           <%= link_to story_path do %>
             <p>our story</p>
           <% end %>
         </div>
 
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'team.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "team.jpg", alt: "team image" %>
           <%= link_to team_path do %>
             <p>our team</p>
           <% end %>
         </div>
 
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'minion-macarons.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "minion-macarons.jpg", alt: "minion macarons image" %>
           <%= link_to menu_path do %>
             <p>our menu</p>
           <% end %>
         </div>
 
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'refreshments.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "refreshments.jpg", alt: "refreshments image" %>
           <%= link_to reviews_path do %>
             <p>our reviews</p>
           <% end %>
         </div>
 
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'coffee-cups-with-plants.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "coffee-cups-with-plants.jpg", alt: "coffee cups with plants image" %>
           <%= link_to responsibility_path do %>
             <p>social responsibility</p>
           <% end %>
         </div>
 
-        <div class="card col-12 col-lg-6" style="background-image: url(<%= image_path 'cny-macarons.jpg' %>);">
+        <div class="card col-12 col-lg-6">
+          <%= image_tag "cny-macarons.jpg", alt: "chinese new year macarons image" %>
           <%= link_to contact_path do %>
             <p>contact us</p>
           <% end %>
