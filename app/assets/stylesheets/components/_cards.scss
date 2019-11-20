@@ -30,6 +30,10 @@
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    &:hover {
+      color: #167FFB;
+      transition: 1s;
+    }
     p {
       font-size: 32px;
       text-align: justify;
