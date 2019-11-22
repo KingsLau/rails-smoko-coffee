@@ -17,4 +17,3 @@
 
 import 'bootstrap';
 import "components/team_scroll";
-import "components/review_scroll";

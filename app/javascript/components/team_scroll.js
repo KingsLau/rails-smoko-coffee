@@ -2,7 +2,8 @@ let initialSrc = "/assets/founder-13e9c0be46a53c4859ae85334a2815bf7846ea7bfa6a3d
 let scrollSrc = "/assets/menu-e68d9ac20913e080e8af1ec562b3bf1628ab24a0c55e2d51da68cc7e170712ce.jpg";
 let element = document.getElementById("abc");
 
-$(window ).scroll(function() {
+$(window).scroll(function() {
+  // $(".cards").css("left", -$(window).scrollTop());
   // If user didn't scroll 500px set default z-index
   if ($(this).scrollTop()>500) {
     $(".person").attr("src", scrollSrc);
@@ -21,6 +22,11 @@ $(window ).scroll(function() {
       // element.classList.add("fadeImage");
   }
 });
+
+// $(window).on('scroll', function() {
+//   $(".cards").css("left", -$(window).scrollTop());
+// });
+
 
 // when above 500, set img src and add fadeImage
 // when below 500, set img src and add fadeImage

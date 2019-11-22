@@ -14,11 +14,10 @@ body, html {
 }
 
 .page {
-  height: 50vh;
-  margin: 0;
+  height: 80.4vh;
+  margin: 348px 0 0 0;
   // padding: 0;
-  padding-top: 348px;
-  // padding-top:
+  // padding-top: 348px;
   text-align: center;
 }
 
@@ -135,6 +134,12 @@ body, html {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+// #fakeContent {
+//   height: 706px;
+//   width: 3837px;
+//   position: absolute;
+// }
 
 // .hidden {
 //   visibility: hidden;
