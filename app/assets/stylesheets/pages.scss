@@ -7,13 +7,13 @@ body, html {
   padding: 0;
   color: white;
   height: auto;
-}
-
-.page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('brick-wall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.page {
   height: 60.4vh;
   margin: 348px 0 0 0;
   // padding: 0;
@@ -33,10 +33,16 @@ body, html {
 
 .team {
   display: flex;
+  // justify-content: space-between;
   // align-items: center;
   .team-images {
     height: 1502px;
     width: 100%;
+    // img {
+    //   height: 100%;
+    //   width: 100%;
+    //   object-fit: cover;
+    // }
     .person {
       height: 700px;
     }
