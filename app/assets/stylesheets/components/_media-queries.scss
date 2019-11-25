@@ -26,6 +26,24 @@
     .carousel-inner {
       height: 76.9vh;
     }
+    .person {
+      height: 656px;
+    }
+    .sticky {
+      top: 194px;
+    }
+    .team-content {
+      height: 150vh;
+      .team-description {
+        width: 40%;
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 
@@ -46,6 +64,11 @@
   #page {
     .carousel-inner {
     }
+    .container {
+    }
+    .team-content {
+      height: 147vh;
+    }
   }
 }
 
@@ -65,6 +88,17 @@
   .col-l-12 {width: 100%;}
   #page {
     .carousel-inner {
+    }
+    .person {
+      height: 656px;
+    }
+    .team-content {
+      height: 145vh;
+      justify-content: center;
+      .team-description {
+        margin-left: 10%;
+        position: static;
+      }
     }
   }
 }
@@ -90,6 +124,12 @@
     }
     .carousel-inner {
       height: 82vh;
+    }
+    .person {
+      height: 700px;
+    }
+    .sticky {
+      top: 150px;
     }
   }
 }
